@@ -1,0 +1,64 @@
+<!-- Login.html -->
+
+{% extends "base_auth.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/css/auth.css">
+{% endblock %}
+
+{% block content %}
+<div class="auth-container">
+
+    <div class="login-box">
+        <div class="avatar">
+            <span class="icon">👤</span>
+        </div>
+
+        <h1>Welcome Back</h1>
+        <p class="subtitle">Login to manage your portfolio</p>
+
+        {% if error %}
+            <p class="error-text">{{ error }}</p>
+        {% endif %}
+
+        <form id="loginForm">
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Enter your email" 
+                value="{{ request.form.email if request.form.email }}"
+                required
+            >
+
+            <input 
+                type="password" 
+                name="password" 
+                placeholder="Enter your password" 
+                required
+            >
+
+            <button type="submit" class="btn btn-primary">
+                Login
+            </button>
+        </form>
+
+        <p class="auth-link">
+            Don’t have an account?
+            <a href="/register">Register</a>
+        </p>
+    </div>
+
+    <!-- <p class="demo-text">
+        Want to see a demo?
+        <a href="/alexjohnson">View Sample Portfolio</a>
+    </p> -->
+
+</div>
+{% endblock %}
+
+{% block js %}
+<script src="/static/js/auth.js"></script>
+{% endblock %}
+
