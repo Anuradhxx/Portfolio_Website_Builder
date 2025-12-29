@@ -1,0 +1,63 @@
+{% extends "base_dash.html" %}
+
+{% block title %}Profile Settings{% endblock %}
+{% set active = "profile" %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/css/profile.css">
+{% endblock %}
+
+{% block page_title %}
+Profile Settings
+{% endblock %}
+
+{% block content %}
+
+<!-- PROFILE PHOTO CARD -->
+<div class="card">
+  <h3>Profile Photo</h3>
+  <p class="muted">Upload a professional photo</p>
+
+  <div class="profile-photo">
+    <div class="avatar"></div>
+    <button class="upload-btn">Upload Photo</button>
+  </div>
+</div>
+
+<!-- BASIC INFO CARD -->
+<form method="post" action="/api/profile/">
+  <div class="card">
+    <h3>Basic Information</h3>
+
+    <div class="form-grid">
+      <input type="text"  name="full_name" placeholder="Full Name">
+      <input type="email" name="email"  placeholder="Email">
+      <input type="text"  name="phone" placeholder="Phone">
+      <input type="text"  name="location" placeholder="Location">
+      <textarea placeholder="Short Bio"></textarea>
+    </div>
+
+      <!-- SOCIAL LINKS -->
+      <section class="card-section">
+        <h3>Social Links</h3>
+
+        <div class="form-grid">
+          <input type="url" name="Social_github" placeholder="Github">
+          <input type="url" name="Social_linkedin" placeholder="linkedin">
+          <input type="url" name="resume_pdf" placeholder="Resume.pdf">
+        </div>
+      </section>
+    
+
+    <!-- SAVE BUTTON -->
+    <div class="save-wrapper">
+      <button type="submit" class="primary-btn">Save Changes</button>
+    </div>
+  </div>
+</form>
+
+{% endblock %}
+
+{% block js %}
+    <script src="/static/js/profile.js"></script>
+    {% endblock %}

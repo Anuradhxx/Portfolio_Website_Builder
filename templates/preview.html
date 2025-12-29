@@ -1,0 +1,13 @@
+{% extends "base_app.html" %}
+{% block css %}
+<link rel="stylesheet" href="/static/css/portfolio.css">
+{% endblock %}
+
+{% block content %}
+<iframe src="/portfolio" class="preview-frame"></iframe>
+<button onclick="publish()">Publish</button>
+{% endblock %}
+
+{% block js %}
+<script src="/static/js/publish.js"></script>
+{% endblock %}

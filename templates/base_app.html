@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Portfolio Builder{% endblock %}</title>
+
+    <!-- Navbar + Footer CSS only -->
+     <link rel="stylesheet" href="/static/css/common.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="navbar-inner">
+        <div class="brand">Portfolio Builder</div>
+
+        <div class="nav-actions">
+            <a href="/login" class="nav-link">Sign In</a>
+            <a href="/register" class="btn-primary">Get Started</a>
+        </div>
+    </div>
+</header>
+
+<!-- PAGE CONTENT -->
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+         <p>© 2025 Portfolio Website Builder.</p>
+        <p>Designed and developed with &#9829 by Anuradha</p>
+
+        <!-- <div class="footer-links">
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+            <a href="/contact">Contact</a>
+        </div> -->
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+{% extends "base_dash.html" %}
+
+{% block title %}Skills{% endblock %}
+{% set active = "skills" %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/css/skills.css">
+{% endblock %}
+
+{% block page_title %}
+Skills
+{% endblock %}
+
+{% block content %}
+
+<div class="heading">
+    <h1>Add / Update Skills</h1>
+    <p>Use this form to manage your skills displayed on the portfolio.</p>
+</div>
+
+<!-- skill 1 -->
+<div id="skillsContainer" class="skills-form">
+    <div class="form-group">
+        <label for="skill_name">Skills</label>
+        <input type="text" id="skill_name" name="skill_name" placeholder="e.g. Python" required>
+    </div>
+
+
+    <div class="form-group">
+        <label for="skill_level">Proficiency level (0–5)</label>
+        <input type="number" id="skill_level" min="0" max="10" placeholder="0 - 5">
+    </div>
+
+    <div class="skill-progress">
+        <div class="skill-progress-bar" id="skillProgressBar">
+            <div id="progressFill" class="progress-fill"></div>
+        </div>
+        <div id="progressText" class="progress-text">0%</div>
+    </div>
+
+    <!-- add skill & save changes -->
+    <div class="skills-actions">
+    <button type="button" class="btn-secondary" onclick="addSkillField()">+ Add Skill</button>
+    <button type="button" class="btn-primary" onclick="saveSkills()">Save Changes</button>
+</div>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block js %}
+<script src="/static/js/skills.js"></script>
+{% endblock %}

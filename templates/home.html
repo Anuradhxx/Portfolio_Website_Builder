@@ -1,0 +1,73 @@
+<!-- home.html -->
+
+{% extends "base_app.html" %}
+
+{% block title %}Home - Portfolio Builder{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/css/common.css">
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="container">
+        <h1>
+            Build Your Professional<br>
+            <span class="gradient-text">Portfolio in Minutes</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            Create stunning portfolios that showcase your skills, projects, and achievements.
+            Choose from beautiful templates and share your work with the world.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="/register" class="btn btn-primary">Start Building Free →</a>
+            <a href="#features" class="btn btn-secondary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="features">
+    <div class="container">
+        <h2 class="section-title">Everything You Need</h2>
+
+        <div class="grid grid-3">
+            <div class="card text-center">
+                <h3>📄 Resume Parser</h3>
+                <p>Upload your PDF resume and automatically extract skills, projects, and contact information.</p>
+            </div>
+            <div class="card text-center">
+                <h3>🎨 Custom Templates</h3>
+                <p>Choose from multiple professional templates and customize colors, fonts, and layouts.</p>
+            </div>
+            <div class="card text-center">
+                <h3>🔗 Shareable Link</h3>
+                <p>Get a unique public URL to share your portfolio with employers and clients.</p>
+            </div>
+            <div class="card text-center">
+                <h3>💼 Project Showcase</h3>
+                <p>Display your projects with descriptions, tech stack, and live demo links.</p>
+            </div>
+            <div class="card text-center">
+                <h3>🏆 Achievements</h3>
+                <p>Highlight your certifications, awards, and professional milestones.</p>
+            </div>
+            <div class="card text-center">
+                <h3>⚡ Fast & Simple</h3>
+                <p>Build your portfolio in minutes with our intuitive dashboard interface.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section cta-section">
+    <div class="container text-center">
+        <h2>Ready to Get Started?</h2>
+        <p>Join thousands of professionals showcasing their work</p>
+        <a href="/register" class="btn btn-primary">Create Your Portfolio</a>
+    </div>
+</section>
+
+{% endblock %}

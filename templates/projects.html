@@ -1,0 +1,134 @@
+{% extends "base_dash.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/css/projects.css">
+{% endblock %}
+
+
+{% block page_title %}
+Projects
+{% endblock %}
+
+{% block content %}
+<div class="heading">
+    <h2>Projects</h2>
+    <p>Showcase your best work</p>
+</div>
+
+
+<div id="projectsContainer">
+
+    <!-- Project Card -->
+    <h3>Project-1</h3>
+    <div class="project-form">
+        <div class="form-group">
+            <label>Project Title</label>
+            <input type="text" placeholder="Write your project title">
+        </div>
+
+        <div class="form-group">
+            <label>Description</label>
+            <textarea rows="4" placeholder="Brief project description"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Tech-Stack</label>
+            <input type="text" placeholder="Write your Tech-Stack... java, bootstrap"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Demo Link</label>
+            <input type="url" placeholder="https://demo-link.com">
+        </div>
+
+        <div class="form-group">
+            <label>GitHub Link</label>
+            <input type="url" placeholder="https://github.com/username/project">
+        </div>
+    </div>
+
+
+    <!-- Project Card -->
+    <h3>Project-2</h3>
+    <div class="project-form">
+        <div class="form-group">
+            <label>Project Title</label>
+            <input type="text" placeholder="Write your project title">
+        </div>
+
+        <div class="form-group">
+            <label>Description</label>
+            <textarea rows="4" placeholder="Brief project description"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Tech-Stack</label>
+            <input type="text" placeholder="Write your Tech-Stack... java, bootstrap"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Demo Link</label>
+            <input type="url" placeholder="https://demo-link.com">
+        </div>
+
+        <div class="form-group">
+            <label>GitHub Link</label>
+            <input type="url" placeholder="https://github.com/username/project">
+        </div>
+    </div>
+
+
+
+    <!-- Project Card -->
+    <h3>Project-3</h3>
+    <div class="project-form">
+        <div class="form-group">
+            <label>Project Title</label>
+            <input type="text" placeholder="Write your project title">
+        </div>
+
+        <div class="form-group">
+            <label>Description</label>
+            <textarea rows="4" placeholder="Brief project description"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Tech-Stack</label>
+            <input type="text" placeholder="Write your Tech-Stack... java, bootstrap"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Demo Link</label>
+            <input type="url" placeholder="https://demo-link.com">
+        </div>
+
+        <div class="form-group">
+            <label>GitHub Link</label>
+            <input type="url" placeholder="https://github.com/username/project">
+        </div>
+    </div>
+
+
+</div>
+
+<!-- Actions -->
+<div class="projects-actions">
+    <button type="button" class="btn-secondary" onclick="addProject()">
+        + Add Project
+    </button>
+
+    <button type="submit" class="btn-primary">
+        Save Changes
+    </button>
+</div>
+
+
+
+
+{% endblock %}
+
+
+
+{% block js %}
+<script src="/static/js/projects.js"></script>
+{% endblock %}
