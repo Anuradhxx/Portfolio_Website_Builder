@@ -1,0 +1,163 @@
+/* css for login.html & register.html */
+
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Page container */
+.auth-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* Login box */
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  min-height: 450px;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Avatar */
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  background: #C7C094;
+  color: #111111;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Headings */
+.login-box h1 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.login-box h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+/* Error message */
+.error-text {
+  color: #dc2626;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 38px;
+  
+}
+
+form input {
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #111111;
+}
+
+/* Button */
+.btn {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #B9B079;
+  color: #111111;
+  margin-top: 18px;
+}
+
+.btn-primary:hover {
+  background-color: #867D46;
+}
+
+/* Auth links */
+.auth-link {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 18px;
+}
+
+.auth-link a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+/* Demo text */
+.demo-text {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.demo-text a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.demo-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 24px;
+  }
+
+  .login-box h1 {
+    font-size: 22px;
+  }
+}
+
